@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cyeber FuyzXKurumi - Platform Cybersecurity Profesional dengan Layanan Konsultasi, Dashboard Monitoring, dan Edukasi Keamanan Digital">
+    <title>Cyeber FuyzXKurumi - Cybersecurity Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Cyeber FuyzXKurumi</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#team">Tim</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact" class="btn-cta">Konsultasi</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Lindungi Infrastruktur Digital Anda
+                <span class="highlight">Dengan Teknologi Cybersecurity Terdepan</span>
+            </h1>
+            <p class="hero-subtitle">Platform keamanan cyber profesional dengan monitoring real-time, konsultasi expert, dan pelatihan keamanan digital</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('booking').scrollIntoView()">
+                    <i class="fas fa-calendar"></i> Booking Konsultasi Gratis
+                </button>
+                <button class="btn btn-secondary" onclick="document.getElementById('services').scrollIntoView()">
+                    <i class="fas fa-arrow-right"></i> Lihat Layanan
+                </button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="animated-shield"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Klien Terlindungi</p>
+            </div>
+            <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Monitoring Aktif</p>
+            </div>
+            <div class="stat-item">
+                <h3>99.9%</h3>
+                <p>Uptime Guarantee</p>
+            </div>
+            <div class="stat-item">
+                <h3>15+</h3>
+                <p>Ahli Cybersecurity</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Layanan Cybersecurity Kami</h2>
+            <p class="section-subtitle">Solusi keamanan digital komprehensif untuk bisnis Anda</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-virus"></i>
+                    </div>
+                    <h3>Penetration Testing</h3>
+                    <p>Pengujian keamanan mendalam untuk mengidentifikasi dan mengatasi kerentanan sistem Anda sebelum penyerang memanfaatkannya.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Network Penetration Test</li>
+                        <li><i class="fas fa-check"></i> Web Application Testing</li>
+                        <li><i class="fas fa-check"></i> Social Engineering Test</li>
+                        <li><i class="fas fa-check"></i> Red Team Exercise</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openServiceModal('penetration')">Pelajari Lebih Lanjut</button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Vulnerability Assessment</h3>
+                    <p>Identifikasi dan katalog semua kerentanan dalam infrastruktur IT Anda dengan laporan detail dan rekomendasi perbaikan.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Automated Scanning</li>
+                        <li><i class="fas fa-check"></i> Manual Testing</li>
+                        <li><i class="fas fa-check"></i> Risk Prioritization</li>
+                        <li><i class="fas fa-check"></i> Remediation Guidance</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openServiceModal('vulnerability')">Pelajari Lebih Lanjut</button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Security Audit & Compliance</h3>
+                    <p>Memastikan sistem Anda mematuhi standar industri seperti ISO 27001, GDPR, PCI-DSS, dan regulasi keamanan lainnya.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> ISO 27001 Audit</li>
+                        <li><i class="fas fa-check"></i> GDPR Compliance</li>
+                        <li><i class="fas fa-check"></i> PCI-DSS Assessment</li>
+                        <li><i class="fas fa-check"></i> Policy Development</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openServiceModal('audit')">Pelajari Lebih Lanjut</button>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Security Monitoring & SOC</h3>
+                    <p>Layanan Security Operations Center 24/7 dengan monitoring real-time, threat detection, dan incident response cepat.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 24/7 Monitoring</li>
+                        <li><i class="fas fa-check"></i> Threat Detection</li>
+                        <li><i class="fas fa-check"></i> Incident Response</li>
+                        <li><i class="fas fa-check"></i> Alert Management</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openServiceModal('soc')">Pelajari Lebih Lanjut</button>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Pelatihan Keamanan & Awareness</h3>
+                    <p>Program pelatihan komprehensif untuk meningkatkan kesadaran keamanan siber karyawan dan mengurangi risiko human error.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Corporate Training</li>
+                        <li><i class="fas fa-check"></i> Security Awareness Program</li>
+                        <li><i class="fas fa-check"></i> Phishing Simulations</li>
+                        <li><i class="fas fa-check"></i> Certification Courses</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openServiceModal('training')">Pelajari Lebih Lanjut</button>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Infrastructure Security</h3>
+                    <p>Desain dan implementasi infrastruktur keamanan yang robust dengan firewall, IDS/IPS, dan sistem deteksi ancaman terdepan.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Firewall Configuration</li>
+                        <li><i class="fas fa-check"></i> IDS/IPS Implementation</li>
+                        <li><i class="fas fa-check"></i> Network Segmentation</li>
+                        <li><i class="fas fa-check"></i> DDoS Protection</li>
+                    </ul>
+                    <button class="btn btn-outline" onclick="openServiceModal('infrastructure')">Pelajari Lebih Lanjut</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="process">
+        <div class="container">
+            <h2>Bagaimana Kami Bekerja</h2>
+            <p class="section-subtitle">Proses sistematis untuk keamanan optimal</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Discovery & Assessment</h3>
+                    <p>Analisis mendalam terhadap infrastruktur dan sistem Anda</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Testing & Evaluation</h3>
+                    <p>Pengujian keamanan dan identifikasi kerentanan</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Reporting</h3>
+                    <p>Laporan detail dengan rekomendasi prioritas</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Remediation & Support</h3>
+                    <p>Implementasi perbaikan dan monitoring berkelanjutan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <h2>Dashboard Monitoring Real-Time</h2>
+            <p class="section-subtitle">Pantau keamanan infrastruktur Anda kapan saja, di mana saja</p>
+            
+            <div class="dashboard-preview">
+                <div class="dashboard-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Real-Time Monitoring</h3>
+                    <p>Monitoring 24/7 dengan alert instant untuk setiap aktivitas mencurigakan</p>
+                </div>
+                <div class="dashboard-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Dashboard komprehensif dengan visualisasi data dan insights mendalam</p>
+                </div>
+                <div class="dashboard-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Alerts</h3>
+                    <p>Notifikasi cerdas yang mengurangi false positives dan fokus pada ancaman nyata</p>
+                </div>
+                <div class="dashboard-feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Access Management</h3>
+                    <p>Kontrol akses berbasis role dengan audit trail lengkap</p>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary" onclick="goToDashboard()">
+                <i class="fas fa-sign-in-alt"></i> Akses Dashboard
+            </button>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Tim Ahli Kami</h2>
+            <p class="section-subtitle">Profesional bersertifikat dengan pengalaman puluhan tahun di industri cybersecurity</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Budi Santoso</h3>
+                    <p class="role">Chief Security Officer</p>
+                    <p class="bio">Expert penetration tester dengan 15+ tahun pengalaman</p>
+                    <div class="certifications">
+                        <span>OSCP</span>
+                        <span>CEH</span>
+                        <span>GIAC</span>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Siti Nurhaliza</h3>
+                    <p class="role">Security Architect</p>
+                    <p class="bio">Spesialis infrastruktur keamanan dan cloud security</p>
+                    <div class="certifications">
+                        <span>AWS-SAA</span>
+                        <span>CISSP</span>
+                        <span>Azure</span>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Ahmad Wijaya</h3>
+                    <p class="role">Incident Response Lead</p>
+                    <p class="bio">Kepemimpinan dalam forensik digital dan incident management</p>
+                    <div class="certifications">
+                        <span>GCIH</span>
+                        <span>ECIH</span>
+                        <span>GCIA</span>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Rini Prasetyo</h3>
+                    <p class="role">Compliance & Risk Manager</p>
+                    <p class="bio">Ahli dalam compliance GDPR, ISO 27001, dan regulasi industri</p>
+                    <div class="certifications">
+                        <span>ISO-LA</span>
+                        <span>CISM</span>
+                        <span>CRISC</span>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Edi Kurniawan</h3>
+                    <p class="role">Threat Intelligence Specialist</p>
+                    <p class="bio">Analisis ancaman dan intelligence gathering untuk defensive strategy</p>
+                    <div class="certifications">
+                        <span>GCTI</span>
+                        <span>CEI</span>
+                        <span>TI+</span>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Dewi Lestari</h3>
+                    <p class="role">Security Training Manager</p>
+                    <p class="bio">Pengembang kurikulum dan trainer untuk security awareness</p>
+                    <div class="certifications">
+                        <span>GIAC-ACE</span>
+                        <span>CCSK</span>
+                        <span>SANS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog & Artikel Keamanan</h2>
+            <p class="section-subtitle">Insight terkini tentang ancaman cyber dan best practices keamanan digital</p>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-category">Threat Analysis</div>
+                    <h3>Analisis Ransomware LockBit 3.0: Evolusi Ancaman Terbaru</h3>
+                    <p>Pelajari tentang varian terbaru ransomware yang telah menyerang ribuan organisasi global dengan teknik enkripsi yang lebih canggih.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar"></i> 15 Oktober 2024</span>
+                        <span><i class="fas fa-user"></i> Budi Santoso</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-category">Best Practice</div>
+                    <h3>7 Langkah Implementasi Zero Trust Architecture</h3>
+                    <p>Panduan lengkap untuk mengimplementasikan model keamanan Zero Trust yang menjadi standar industri saat ini.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar"></i> 12 Oktober 2024</span>
+                        <span><i class="fas fa-user"></i> Siti Nurhaliza</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-category">Compliance</div>
+                    <h3>GDPR dan Keamanan Data: Kewajiban yang Harus Dipenuhi</h3>
+                    <p>Memahami regulasi GDPR dan implementasi praktis untuk melindungi data pribadi pelanggan Anda secara compliance.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar"></i> 10 Oktober 2024</span>
+                        <span><i class="fas fa-user"></i> Rini Prasetyo</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-category">Incident Response</div>
+                    <h3>Studi Kasus: Respons Cepat Terhadap Breach Internal</h3>
+                    <p>Bagaimana kami berhasil menangani dan mengatasi serangan internal dalam waktu 2 jam tanpa kebocoran data.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar"></i> 8 Oktober 2024</span>
+                        <span><i class="fas fa-user"></i> Ahmad Wijaya</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-category">Vulnerability</div>
+                    <h3>CVE-2024-XXX: Kerentanan Kritis di Log4j Shell</h3>
+                    <p>Informasi mendetail tentang vulnerability baru dan bagaimana melindungi sistem Anda dari eksploitasi.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar"></i> 5 Oktober 2024</span>
+                        <span><i class="fas fa-user"></i> Edi Kurniawan</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya →</a>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-category">Training</div>
+                    <h3>Pentingnya Security Awareness Training untuk Karyawan</h3>
+                    <p>Mengapa pelatihan keamanan regular dan engaging adalah investasi terbaik untuk mengurangi risiko human error.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar"></i> 1 Oktober 2024</span>
+                        <span><i class="fas fa-user"></i> Dewi Lestari</span>
+                    </div>
+                    <a href="#" class="read-more">Baca Selengkapnya →</a>
+                </article>
+            </div>
+            
+            <div class="blog-cta">
+                <button class="btn btn-primary">
+                    <i class="fas fa-newspaper"></i> Lihat Semua Artikel
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Testimonial Klien</h2>
+            <p class="section-subtitle">Kepercayaan klien adalah aset terbesar kami</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Cyeber FuyzXKurumi telah mengubah pendekatan keamanan kami. Monitoring real-time dan tim expert mereka memberikan peace of mind yang kami butuhkan."</p>
+                    <div class="testimonial-author">
+                        <strong>PT. Maju Jaya Indonesia</strong>
+                        <span>CEO & Founder</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Layanan konsultasi mereka sangat profesional. Dalam waktu singkat, kami berhasil mencapai compliance ISO 27001 dan PCI-DSS dengan guidance yang jelas."</p>
+                    <div class="testimonial-author">
+                        <strong>Bank Digital Indonesia</strong>
+                        <span>IT Security Manager</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Tim mereka mendeteksi dan mencegah breach yang hampir terjadi. Response time mereka sangat cepat dan komunikasi sangat transparan sepanjang proses."</p>
+                    <div class="testimonial-author">
+                        <strong>E-Commerce Platform</strong>
+                        <span>CTO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Cyeber FuyzXKurumi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Misi Kami</h3>
+                    <p>Memberikan solusi cybersecurity terdepan yang melindungi aset digital organisasi dari ancaman cyber yang terus berkembang. Kami berkomitmen untuk menjadi partner terpercaya dalam perjalanan transformasi digital yang aman.</p>
+                    
+                    <h3>Visi Kami</h3>
+                    <p>Menjadi platform cybersecurity terkemuka di Asia Tenggara dengan standar internasional, yang dipercaya oleh ribuan organisasi untuk melindungi infrastruktur digital mereka.</p>
+                    
+                    <h3>Nilai Inti Kami</h3>
+                    <ul class="values-list">
+                        <li><strong>Integritas:</strong> Transparansi penuh dalam setiap engagement</li>
+                        <li><strong>Keunggulan:</strong> Standar tertinggi dalam layanan keamanan</li>
+                        <li><strong>Inovasi:</strong> Teknologi terkini dan metodologi terdepan</li>
+                        <li><strong>Kepercayaan:</strong> Privasi dan keamanan data klien adalah prioritas utama</li>
+                        <li><strong>Kolaborasi:</strong> Kemitraan jangka panjang untuk kesuksesan bersama</li>
+                    </ul>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h4>500+</h4>
+                        <p>Klien Aktif</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>10,000+</h4>
+                        <p>Vulnerabilities Ditutup</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>50+</h4>
+                        <p>Breach Dicegah</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>15+</h4>
+                        <p>Expert Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Hubungi Kami Sekarang</h2>
+            <p class="section-subtitle">Dapatkan konsultasi gratis untuk infrastruktur keamanan Anda</p>
+            
+            <form class="booking-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Nama Perusahaan</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Layanan yang Diinginkan</label>
+                    <select id="service" name="service" required>
+                        <option value="">Pilih Layanan</option>
+                        <option value="penetration">Penetration Testing</option>
+                        <option value="vulnerability">Vulnerability Assessment</option>
+                        <option value="audit">Security Audit & Compliance</option>
+                        <option value="monitoring">Security Monitoring & SOC</option>
+                        <option value="training">Pelatihan Keamanan</option>
+                        <option value="infrastructure">Infrastructure Security</option>
+                        <option value="other">Lainnya</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Tanggal Konsultasi Diinginkan</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan atau Pertanyaan Khusus</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Jelaskan kebutuhan keamanan Anda..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-paper-plane"></i> Kirim Permintaan Konsultasi
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Informasi Kontak</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Lokasi</h3>
+                    <p>Jakarta Selatan, Indonesia<br>Jl. Gatot Subroto No. 123, Blok A</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telepon</h3>
+                    <p>+62 21 1234 5678<br>+62 812 3456 7890</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@cyberfuyzxkurumi.com<br>support@cyberfuyzxkurumi.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Jam Operasional</h3>
+                    <p>Senin - Jumat: 09:00 - 18:00<br>24/7 Emergency Support</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Cyeber FuyzXKurumi</h4>
+                    <p>Platform cybersecurity profesional untuk melindungi infrastruktur digital Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#services">Penetration Testing</a></li>
+                        <li><a href="#services">Security Audit</a></li>
+                        <li><a href="#services">Monitoring SOC</a></li>
+                        <li><a href="#services">Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#team">Tim</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Bergabung dengan Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Anda" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cyeber FuyzXKurumi. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Security Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
